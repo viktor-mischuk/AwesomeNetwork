@@ -22,7 +22,10 @@
             <div class="topnav">
                 @if (!SignInManager.IsSignedIn(User))
                 {
-                    <a asp-area="" asp-controller="Home" asp-action="Index">SocialNetwork</a>
+                    @* <a asp-area="" asp-controller="Home" asp-action="Index">SocialNetwork</a> *@
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/Images/logo.png" width="300"/>
+                    </a>
                 }
                 else
 
